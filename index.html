@@ -3,32 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jogo Ético – Dilemas na Engenharia de Software</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Dilemas Éticos – Jogo Educativo</title>
+  <link rel="stylesheet" href="Index.css" />
 </head>
 <body>
-  <div id="welcome-screen" class="container welcome">
-    <h1 class="titulo-jogo">🎮 Bem-vindo ao <span>Dilemas Éticos</span></h1>
-    <p class="descricao">Prepare-se para tomar decisões importantes sobre ética na engenharia de software.</p>
-    <button id="start-button" class="botao-jogo">🚀 Iniciar Jogo</button>
-  </div>
-
-  <div class="container hidden" id="game-container">
-    <h1>Dilemas Éticos em Engenharia de Software</h1>
-    <div id="question-container">
-      <p id="question">Carregando pergunta...</p>
-      <div id="options"></div>
+  <header>
+    <div class="logo-area">
+      <h1>Dilemas Éticos em Engenharia de Software</h1>
     </div>
-    <div class="info">
-      <p id="score">Pontuação: 0</p>
-      <p id="progress">Pergunta 1 de 5</p>
-    </div>
-    <button id="next-button" disabled>Próxima Pergunta</button>
-    <div id="result" class="hidden"></div>
-    <button id="restart-button" class="botao-jogo hidden">🔄 Reiniciar Jogo</button>
-    <audio id="click-sound" src="click.mp3" preload="auto"></audio>
-  </div>
+  </header>
 
-  <script src="script.js"></script>
+  <main>
+    <section class="intro">
+      <h2>🧠 Tome decisões que desafiam sua ética profissional</h2>
+      <p>
+        Este jogo interativo coloca você diante de situações reais enfrentadas por profissionais de tecnologia.
+        Teste sua consciência ética e aprimore seu julgamento!
+      </p>
+      <a href="SegundaPagina.html" class="play-button">🎮 Jogar Agora</a>
+    </section>
+
+    <section class="sobre">
+      <h3>📚 Sobre o Projeto</h3>
+      <p>
+        Criado para estimular a reflexão ética, o jogo é ideal para estudantes, profissionais e professores interessados em tecnologia e responsabilidade.
+      </p>
+    </section>
+
+    <section class="educadores">
+      <h3>👩‍🏫 Para Educadores</h3>
+      <ul>
+        <li>💬 Use em debates e rodas de discussão</li>
+        <li>🧩 Crie missões baseadas nos dilemas</li>
+        <li>📝 Proponha reflexões após cada sessão</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 – Desenvolvido por Raymer</p>
+  </footer>
 </body>
 </html>
