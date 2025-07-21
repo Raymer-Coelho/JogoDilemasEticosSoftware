@@ -98,6 +98,9 @@ function mostrarPergunta() {
     botao.onclick = () => {
       tocarSom();
       selecionarOpcao(opcao.pontos);
+
+      // Destaque visual
+      botao.style.backgroundColor = opcao.pontos > 0 ? "#a5d6a7" : "#ef9a9a";
     };
     opcoesEl.appendChild(botao);
   });
@@ -115,6 +118,12 @@ function selecionarOpcao(pontos) {
   pontuacao += pontos;
   botaoProxima.disabled = false;
   mostrarComentarioEtico(pontos);
+
+  // Desativa os botões após a seleção
+  const botoes = document.querySelectorAll("#options button");
+  botoes.forEach((btn) => {
+    btn.disabled = true;
+  });
 }
 
 function mostrarComentarioEtico(pontos) {
