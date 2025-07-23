@@ -1,0 +1,285 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5fdf6;
+  color: #2e5e4e;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(46, 94, 78, 0.2);
+}
+
+h1, h2 {
+  color: #2e5e4e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(76, 175, 80, 0.4);
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+/* Tabela de Resultados */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #f0fff4;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #cce3d4;
+}
+
+th {
+  background-color: #d1f0d9;
+  color: #2e5e4e;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #e8f6ee;
+}
+
+form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+fieldset {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #cce3d4;
+  border-radius: 8px;
+  background-color: #e8f6ee;
+}
+
+a {
+  display: inline-block;
+  background-color: #2e5e4e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #45a049;
+}
+
+.btn-excluir {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-excluir:hover {
+  background-color: #c0392b;
+}
+
+/* Agrupamento de campos */
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cce3d4;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f0fff4;
+  color: #2e5e4e;
+}
+
+/* Botões agrupados */
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Botão de voltar */
+.btn-voltar {
+  background-color: #2e5e4e;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #3f7a66;
+}
+
+/* Link de resultados */
+.link-resultados {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #2e5e4e;
+  text-decoration: none;
+}
+
+.link-resultados:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* Botões agrupados e centralizados */
+.botoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Estilo unificado para botão e link */
+.btn-acao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+  transition: all 0.3s ease-in-out;
+  min-width: 180px;
+  height: 48px; /* altura fixa para todos */
+  line-height: 1; /* evita altura extra em <a> */
+}
+
+
+/* Hover para todos */
+.btn-acao:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(76, 175, 80, 0.4);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .botoes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-acao {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .botoes {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  button, .btn-voltar {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    background: #f0fff4;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  td {
+    padding-left: 50%;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    font-weight: bold;
+    color: #2e5e4e;
+  }
+}

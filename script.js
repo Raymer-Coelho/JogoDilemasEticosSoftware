@@ -174,9 +174,16 @@ function mostrarResultado() {
   resultadoEl.textContent = `${mensagem}\nPontuação final: ${pontuacao} — ${medalha}\n${animacaoFinal}`;
 
   botaoRestart.classList.remove("hidden");
+  document.getElementById("home-button").classList.remove("hidden");
+
 }
 
 botaoRestart.addEventListener("click", () => {
   botaoRestart.classList.add("hidden");
   iniciarJogo();
 });
+
+document.getElementById("home-button").addEventListener("click", () => {
+  window.location.href = "index.html"; // ajuste o caminho conforme sua estrutura
+});
+
